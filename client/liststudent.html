@@ -1,0 +1,17 @@
+<template name="liststudent">
+	<table class="bordered">
+		<thead>
+			<tr>
+				<th class='theader' data-name="name">Name</th>
+				<th class='theader' data-name="phone">Phone</th>
+				<th class='theader' data-name="class">Class</th>
+				<th class='theader' data-name="city">City</th>
+			</tr>
+		</thead>
+		<tbody class="table-hover">
+			{{#each students}}
+			{{> student}}
+			{{/each}}
+		</tbody>
+	</table>		
+</template>
